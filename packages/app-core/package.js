@@ -23,9 +23,9 @@ Package.onUse(function(api) {
   // Here you add all your modules, and also define the load order by the way
   // you order them in this array. MAKE SURE app:lib always goes first!
   var packages = [
-    'app:lib', // no dependencies
-    'app:module1', // lib
-    'app:module2', // ...
+    'app:lib'//, // no dependencies
+    // 'app:module1', // lib
+    // 'app:module2', // ...
   ];
 
   api.use(packages); // all code => this package
@@ -35,12 +35,12 @@ Package.onUse(function(api) {
 
   // both
   api.addFiles([
-    //
+    'lib/app.js'
   ]);
 
   // client
   api.addFiles([
-
+    'lib/app.html'
   ], 'client');
 
   // server

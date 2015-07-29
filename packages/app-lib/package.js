@@ -27,6 +27,7 @@ Package.onUse(function(api) {
     'mongo',
     'templating',
     'standard-app-packages',
+    'meteor-platform',
     'iron:router',
     'check',
     'coffeescript',
@@ -35,18 +36,16 @@ Package.onUse(function(api) {
     'jquery',
     'accounts-ui',
     'spiderable',
-    'accounts-google',
-    'sacha:spin',
-    'cfs:standard-packages',
-    'cfs:filesystem',
-    'cfs:s3',
-    'cfs:ejson-file',
-    'cfs:ui',
     'meteorhacks:npm',
-    'npm-container',
-    'reywood:publish-composite',
-    'ajduke:bootstrap-tagsinput',
-    'accounts-password'
+    'accounts-password',
+    'service-configuration',
+    'email',
+    'aldeed:template-extension',
+    'reactive-var',
+    'underscore',
+    'less',
+    'markdown',
+    'webapp'
   ];
 
   api.use(packages);
@@ -77,6 +76,9 @@ Package.onUse(function(api) {
   api.export([
     'App',
     'Secondary',
-    '_'
+    '_',
+    'Meteor',
+    'Template',
+    'Blaze'
   ]);
 });

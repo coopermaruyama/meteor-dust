@@ -19,8 +19,8 @@ Package.onUse(function(api) {
 
   // Dependencies
   api.use([
-    "app:lib", // always goes first
-    "app:module2" // If your module depends on another, add it.
+    "app:lib" // always goes first
+    // "app:module2" // If your module depends on another, add it.
   ]);
 
   // Server files
