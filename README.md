@@ -1,5 +1,7 @@
 # Meteor Dust: Boilerplate For Large Meteor Apps
 
+[![Join the chat at https://gitter.im/coopermaruyama/meteor-dust](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/coopermaruyama/meteor-dust?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A blank meteor application with some boilerplate that was born out of [this 
 hackpad](https://meteor.hackpad.com/Building-Large-Apps-Tips-d8PQ848nLyE) that 
 incorporates current best practices for creating a modular, all-packages app
