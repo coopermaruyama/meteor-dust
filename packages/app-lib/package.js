@@ -24,11 +24,9 @@ Package.onUse(function(api) {
   //       which is more verbose and modular, but packages are defined in
   //       multiple places. You can always mix the two.
   var packages = [
-    'mongo',
-    'templating',
-    'standard-app-packages',
     'meteor-platform',
-    'iron:router',
+    // 'iron:router', // If we include iron:router, we should also create Routes.
+    // Also, people can choose between iron:router and kadira:flow-router.
     'check',
     'coffeescript',
     'fourseven:scss',
@@ -45,7 +43,6 @@ Package.onUse(function(api) {
     'underscore',
     'less',
     'markdown',
-    'webapp'
   ];
 
   api.use(packages);
