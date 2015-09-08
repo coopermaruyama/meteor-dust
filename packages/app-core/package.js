@@ -35,12 +35,13 @@ Package.onUse(function(api) {
 
   // both
   api.addFiles([
-    'lib/app.js'
+    
   ]);
 
   // client
   api.addFiles([
-    'lib/app.html'
+    'lib/client/app.html',
+    'lib/client/app.js'
   ], 'client');
 
   // server
