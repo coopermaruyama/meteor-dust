@@ -63,7 +63,7 @@ guaranteed to load *after* all your modules have finished loading. This would
 be a good place to put configurations for packages, startup code, and any
 code that doesn't make sense to put into a module yet. 
 
-3. Besides the abilty to run code in a specific context of load order, you
+3. Besides the ability to run code in a specific context of load order, you
 will have the ability to take  all the globals that were exported by your
 modules and 3rd-party packages and namespace them under your main `App` global
 namespace. 
