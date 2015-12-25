@@ -1,12 +1,12 @@
 // App: Core (3rd layer)
 //
 // * This is where your modules are built into an application. The only package
-// you should have to `meteor add` is  `metepor add app:core`. This package
-// also acts as an umbrella by including alll your app's dependencies/code, and
-// alko acts as a namespace manager.
+// you should have to `meteor add` is  `meteor add app:core`. This package
+// also acts as an umbrella by including all your app's dependencies/code, and
+// also acts as a namespace manager.
 //
 // *  In each module, you should have exported a single global variable with
-//    anything that we might neeed to access. Here in app:core, move these
+//    anything that we might need to access. Here in app:core, move these
 //    exports into the 'App' global namespace.
 
 Package.describe({

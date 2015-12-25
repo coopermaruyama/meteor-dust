@@ -3,12 +3,12 @@
 //   be defined here.
 // * Code in this package is guaranteed to run before any other part of the app.
 // * All other packages depend on this package. This is a great place to define
-//   shared utilities as well as extend/add functionality to any packagee before
+//   shared utilities as well as extend/add functionality to any package before
 //   the application loads it.
 Package.describe({
   name: 'app:lib', // All modules should api.use() this.
   summary: 'Application core library.',
-  version: '1.0.0',
+  version: '1.0.0'
 });
 
 Package.onUse(function(api) {
@@ -16,11 +16,11 @@ Package.onUse(function(api) {
   api.versionsFrom(['METEOR@1.0']);
 
   // Global packages
-  // * You have 2 options for handling atmoshpere packages:
-  //    1. Put all dependendencies for all modules here. Advantage is that all
+  // * You have 2 options for handling atmosphere packages:
+  //    1. Put all dependencies for all modules here. Advantage is that all
   //       version constraints, load order, extending packages, and anything
   //       else can be done here, in one single file.
-  //    2. Explicity define the dependencies for each module within its manifest
+  //    2. Explicitly define the dependencies for each module within its manifest
   //       which is more verbose and modular, but packages are defined in
   //       multiple places. You can always mix the two.
   var packages = [
@@ -42,7 +42,7 @@ Package.onUse(function(api) {
     'reactive-var',
     'underscore',
     'less',
-    'markdown',
+    'markdown'
   ];
 
   api.use(packages);
@@ -54,7 +54,7 @@ Package.onUse(function(api) {
   // modules access to them via global namespace.
   api.imply(packages);
 
-  // Trick to set envrionment-specific packages. I personally use `direnv` to
+  // Trick to set environment-specific packages. I personally use `direnv` to
   // automatically set the right environment vars for my meteor apps.
   if (process.env.IS_PRODUCTION) {
     api.use('xolvio:inspectlet');

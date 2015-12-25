@@ -6,7 +6,7 @@
 //   you create one called 'app-collections' or 'app-views' you're doing it
 //   wrong.
 //
-// * Each package should export a single gloval variable, unique to that module.
+// * Each package should export a single global variable, unique to that module.
 Package.describe({
   name: "app:module", // Reference you'll use in other modules to add this one.
   summary: "Some info" ,
@@ -35,7 +35,7 @@ Package.onUse(function(api) {
 
   // Client files
   api.addFiles([
-    // lib/client/modulesjs""
+    // lib/client/modules.js""
   ], "client");
 
   // Exports
