@@ -43,12 +43,12 @@ code that should run **before** your main code (modules) runs.
 * Next, you'll see `app-module` which is just an example for you to replace. You 
 will make most of your app out of packages like this one, which must always
 depend on `app-lib` before anything else. If a module depends on another of
-your modules, then you must explicitly desfine that with an `api.use`. If
+your modules, then you must explicitly define that with an `api.use`. If
 there's a package that only 1 or 2 modules use in the whole app, it might make
 sense to require it in the module rather than `app-lib`.
 
 * Lastly, each module should export a global variable under which all relevant
-things are namespaced under (`api.export('Module1')`.
+things are namespaced under `api.export('Module1')`.
 
 The 3rd and final package included is called `app-core`. This is also a very
 important piece of the puzzle which is to be used as follows:
@@ -57,7 +57,7 @@ important piece of the puzzle which is to be used as follows:
 effectively builds your application. You also get to define the order which
 you want your modules to load in here. 
 
-2. This package is meant to contai your main 'app' code, and what you
+2. This package is meant to contain your main 'app' code, and what you
 put here depends on what you're building. Any code that you put here is
 guaranteed to load *after* all your modules have finished loading. This would
 be a good place to put configurations for packages, startup code, and any

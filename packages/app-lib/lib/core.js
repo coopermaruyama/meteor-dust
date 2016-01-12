@@ -113,7 +113,7 @@ App.utils.extend = function (Parent, props) {
     // isn't provided.
     var constructor;
     if (_.has(props, 'constructor'))
-      constructor = props.constructor
+      constructor = props.constructor;
     else
       constructor = ctor.__super__.constructor;
 
@@ -254,10 +254,9 @@ App.utils.resolve = function (nameOrValue) {
   return ptr;
 };
 
-
 /**
  * Utility for accessing helpers from another helper, even when the current
- *  context gets set to something non-templatey like a collection or something.
+ *  context gets set to something non-template like a collection or something.
  *
  * @param   {object} template - Name of template as in <template name="name">
  * @param   {string} helperName - Exact name of helper.
@@ -271,7 +270,7 @@ App.utils.getHelper = function(template, helperName) {
     throw new Error('helperName needs to be a string.');
   }
   return Blaze._getTemplateHelper(template, helperName);
-}
+};
 
 // make sure App ends up in the global namespace
 App.utils.global.App = App;
