@@ -1,3 +1,7 @@
+# NOTE
+
+As of Meteor 1.3 which supports module imports, the ideas in this repo are no longer necessary. If for some reason you have to use a pre-1.3 version of meteor (e.g. too much effort to migrate) then this is still relevant.
+
 # Meteor Dust: Boilerplate For Large Meteor Apps
 
 [![Join the chat at https://gitter.im/coopermaruyama/meteor-dust](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/coopermaruyama/meteor-dust?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
